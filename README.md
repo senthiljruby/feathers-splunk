@@ -22,7 +22,7 @@ Here's an example of a Feathers server that uses `feathers-splunk`.
 
 ```js
 const feathers = require("@feathersjs/feathers");
-const splunk = require("feathers-splunk");
+const { splunk } = require("feathers-splunk");
 
 // Initialize the application
 const app = feathers();

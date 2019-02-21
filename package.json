@@ -1,7 +1,7 @@
 {
   "name": "feathers-splunk",
-  "description": "",
-  "version": "0.0.1",
+  "description": "Integrates feathersjs + splunk for logging",
+  "version": "0.0.2",
   "homepage": "https://github.com/senthiljruby/feathers-splunk",
   "main": "lib/",
   "keywords": [
