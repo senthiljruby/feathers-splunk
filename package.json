@@ -33,8 +33,8 @@
     "release:major": "npm version major && npm publish",
     "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -am \"Updating changelog\"",
     "lint": "semistandard lib/*.js lib/**/*.js test/*.js test/**/*.js --fix",
-    "mocha": "mocha --opts mocha.opts",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- --opts mocha.opts",
+    "mocha": "mocha",
+    "coverage": "nyc mocha",
     "test": "npm run lint && npm run coverage"
   },
   "semistandard": {
@@ -52,6 +52,7 @@
     "chai": "^5.1.0",
     "istanbul": "^0.4.5",
     "mocha": "^10.3.0",
+    "nyc": "^15.1.0",
     "semistandard": "^17.0.0"
   }
 }
